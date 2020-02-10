@@ -25,7 +25,7 @@ html {
 body {
     max-width: 1024px;
     margin: auto;
-    border: 4px var(--spore-mid-space) solid;
+    border: 4px var(--spore-light-space) solid;
 }
 
 
@@ -54,14 +54,6 @@ img {
 
 /* Header navigation */
 
-header nav {
-    position: absolute;
-    top: 0;
-    right: 0;
-
-    z-index: 1;
-}
-
 header nav ul {
     margin: 0;
     padding: 12px 0;
@@ -73,7 +65,7 @@ header nav li {
 }
 
 header nav li:hover {
-    background-color: var(--spore-neutral);
+    background-color: var(--spore-light-space);
 }
 
 header nav a {
@@ -89,7 +81,7 @@ header nav #nav-menu ul {
 }
 header nav #nav-menu li:hover ul {
     display: block;
-    background-color: var(--spore-neutral);
+    background-color: var(--spore-light-space);
 }
 header nav #nav-menu ul li {
     display: block;
@@ -107,8 +99,9 @@ header nav #nav-menu {
 }
 
 #page-title {
-    color: var(--spore-mid-space);
+    color: var(--spore-light-space);
     font-size: 24px;
+    padding: 0 24px;
 }
 
 
