@@ -28,6 +28,7 @@ body {
     max-width: 1024px;
     margin: auto;
     border: 8px var(--spore-light-space) solid;
+    background: var(--spore-white);
 }
 
 
