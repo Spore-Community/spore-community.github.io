@@ -25,7 +25,7 @@ html {
 body {
     max-width: 1024px;
     margin: auto;
-    border: 4px var(--spore-light-space) solid;
+    border: 8px var(--spore-light-space) solid;
 }
 
 
@@ -88,20 +88,7 @@ header nav #nav-menu ul li {
 }
 
 header nav #nav-menu {
-    /*float: right;*/
-}
-
-/* Header text */
-
-#site-title {
-    color: var(--spore-mid-space);
-    font-size: 32px;
-}
-
-#page-title {
-    color: var(--spore-light-space);
-    font-size: 24px;
-    padding: 0 24px;
+    float: right;
 }
 
 
@@ -111,6 +98,11 @@ header nav #nav-menu {
 article {
     padding: 0 24px;
     margin: 24px 0;
+}
+
+h1 {
+    color: var(--spore-light-space);
+    font-size: 24px;
 }
 
 h2 {
