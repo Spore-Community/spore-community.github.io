@@ -20,6 +20,8 @@ html {
     --spore-light-space: #4E9DD8;
     --spore-mid-space: #2361A7;
     --spore-deep-space: #000112;
+  
+  background: var(--spore-cool) url("style/bg.png");
 }
 
 body {
