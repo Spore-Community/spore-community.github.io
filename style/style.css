@@ -1,0 +1,136 @@
+/* Basic styling */
+
+@font-face {
+  font-family: Spore-Regular;
+  src: url(Spore-Regular.ttf);
+}
+@font-face {
+  font-family: Spore-Light;
+  src: url(Spore-Light.ttf);
+}
+
+html {
+    font-family: Spore-Light, Spore-Regular, sans-serif;
+    font-size: 16px;
+    
+    --spore-white: #FFF;
+    --spore-cool: #F0F1F4;
+    --spore-neutral: #939496;
+    --spore-deep-grey: #6D6E70;
+    --spore-light-space: #4E9DD8;
+    --spore-mid-space: #2361A7;
+    --spore-deep-space: #000112;
+}
+
+body {
+    max-width: 1024px;
+    margin: auto;
+}
+
+
+
+/* Reusable styles */
+
+.hidden {
+    display: none;
+}
+
+.columns {
+    display: flex;
+}
+.columns div {
+    flex: 25%;
+    font-size: 14px;
+    padding: 0 4px;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+
+/* Header navigation */
+
+header nav {
+    color: var(--spore-mid-space);
+    position: sticky;
+    top: 0;
+
+    z-index: 1;
+}
+
+header nav ul {
+    margin: 0;
+    padding: 12px 0;
+}
+
+header nav li {
+    display: inline;
+    padding: 12px;
+}
+
+header nav li:hover {
+    background-color: var(--spore-neutral);
+}
+
+header nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+header nav #nav-menu ul {
+    display: none;
+    position: absolute;
+    margin-top: 12px;
+    padding: 0;
+}
+header nav #nav-menu li:hover ul {
+    display: block;
+    background-color: var(--spore-neutral);
+}
+header nav #nav-menu ul li {
+    display: block;
+}
+
+header nav #nav-menu {
+    float: right;
+}
+
+/* Header text */
+
+#site-title {
+    color: var(--spore-mid-space);
+    font-size: 32px;
+}
+
+#page-title {
+    color: var(--spore-light-space);
+    font-size: 32px;
+}
+
+
+
+/* Main page content */
+
+article {
+    background-color: #fff;
+    padding: 0 24px;
+    border: 4px var(--spore-mid-space) solid;
+    margin: 24px 0;
+}
+
+h2 {
+    color: var(--spore-light-space);
+    font-size: 14px;
+}
+
+article p {
+    margin-top: 0;
+}
+
+article p a {
+    margin-top: 0;
+    color: var(--spore-light-space);
+}
