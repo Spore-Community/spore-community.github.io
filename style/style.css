@@ -11,7 +11,7 @@
 
 html {
     font-family: Spore-Light, Spore-Regular, sans-serif;
-    font-size: 16px;
+    font-size: 18px;
     
     --spore-white: #FFF;
     --spore-cool: #F0F1F4;
@@ -105,12 +105,12 @@ article {
 
 h1 {
     color: var(--spore-light-space);
-    font-size: 24px;
+    font-size: 28px;
 }
 
 h2 {
     color: var(--spore-light-space);
-    font-size: 14px;
+    font-size: 24px;
 }
 
 article p {
