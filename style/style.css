@@ -9,10 +9,15 @@
   src: url(Spore-Light.ttf);
 }
 
+@font-face {
+  font-family: "Trebuchet EA";
+  src: url(trebucheteabold.ttf);
+}
+
 html {
-    font-family: Spore-Light, Spore-Regular, sans-serif;
-    font-size: 18px;
-    
+    --spore-font: Spore-Regular, sans-serif;
+    --spore-body-font: "Trebuchet EA", sans-serif;
+
     --spore-white: #FFF;
     --spore-cool: #F0F1F4;
     --spore-neutral: #939496;
@@ -20,8 +25,11 @@ html {
     --spore-light-space: #4E9DD8;
     --spore-mid-space: #2361A7;
     --spore-deep-space: #000112;
-  
-  background: var(--spore-cool) url("bg.png");
+
+    font-family: var(--spore-font);
+    font-size: 16px;
+
+    background: var(--spore-cool) url("bg.png");
 }
 
 body {
@@ -113,8 +121,13 @@ h2 {
     font-size: 24px;
 }
 
+h3 {
+    font-size: 20px;
+}
+
 article p {
     margin-top: 0;
+    font-family: var(--spore-body-font);
 }
 
 article p a {
