@@ -9,7 +9,7 @@ The following is included in Pollen Metadata:
 - Tags
 - Consequence traits
 - Timestamp (seconds since AD 1)
-- other IDs with unknown purposes
+- other IDs, purposes currently unknown
 
 ## Use in Spore PNGs
 This metadata is included inside Spore PNG data, as a header, prefixing the Spore Model XML.
@@ -27,22 +27,21 @@ Length | Type | Name | Description
 16 | Hex | Asset ID | Uniquely identifies this asset on the server. May be null (-1) if offline.
 16 | Hex | Parent ID | Indicates the "parent" asset's ID, if this creation was edited. Used for lineage. Only present if version is 6.
 16 | Hex | Timestamp | Time when asset was saved. Seconds since AD 1.
-2 | Hex | | Length of author's username.
+2 | Hex | Username Length | Length of author's username.
 \* | String | Username | Author's username. May be computer username if offline.
 16 | Hex | User ID | Uniquely identifies user on the server. May be null (-1) if offline.
-2 | Hex | | Length of asset's name.
+2 | Hex | Name Length | Length of asset's name.
 \* | String | Name | Asset's name, as set in editor.
 3 | Hex | | Length of description.
 \* | String | Description | As set in editor. NOT updated if the description is changed on Spore.com.
-2 | Hex | | Length of tags.
+2 | Hex | Tags Length | Length of tags.
 \* | String | Tags | As set in editor. NOT updated if the tags are changed on Spore.com.
-2 | Hex | | Number of consequence traits (stages completed). Will be 0 for non-creatures.
+2 | Hex | Traits Length | Number of consequence traits (stages completed). Will be 0 for non-creatures.
 \*8 | Hex | Consequence Traits | An 8-length hex ID for each consequence trait this creature has. Only present for creatures.
-{: .table}
 
 ### Examples
 #### Creature example
-`spore00062b978c4640626200182183d70190b84d00000074a91fa01900000074a91fa0130000000ed18afdbf09DOGC_Kyle0000007476707e6505Kylon036From Planet Kylia. Part of the Spore Multiplayer Game.1aset:dogckylon, multiplayer0217e5ef84cfb01b93`
+```spore00062b978c4640626200182183d70190b84d00000074a91fa01900000074a91fa0130000000ed18afdbf09DOGC_Kyle0000007476707e6505Kylon036From Planet Kylia. Part of the Spore Multiplayer Game.1aset:dogckylon, multiplayer0217e5ef84cfb01b93```
 
 Name | Value | Description
 --- | --- | ---
@@ -73,4 +72,5 @@ A similar format is used inside of various Spore package files (DBPFs/database p
 The metadata for an asset is in its own file, with an extension of `.pollen_metadata`. `.pmet` is also believed to be a valid extension. A hex editor is needed to view and edit the data.
 
 The metadata has the following format:
+
 WIP
