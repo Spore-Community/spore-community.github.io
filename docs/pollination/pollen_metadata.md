@@ -50,18 +50,18 @@ Type ID | `2b978c46` | Purpose unknown.
 Group ID | `40626200` | Always the same. Purpose unknown.
 Instance ID | `182183d7` | Purpose unknown.
 Machine ID | `0190b84d` | Purpose unknown.
-Asset ID | `00000074a91fa019` | Converts to `501,053,628,441`. Can be used to find this creation on the server: http://www.spore.com/sporepedia#qry=sast-501053628441
-Parent ID | `00000074a91fa013` | Converts to `501,053,628,435`. Can be used to find parent creation on the server: http://www.spore.com/sporepedia#qry=sast-501053628435
+Asset ID | `00000074a91fa019` | Converts to `501,053,628,441`. Can be used to find this creation on the server: [http://www.spore.com/sporepedia#qry=sast-501053628441]
+Parent ID | `00000074a91fa013` | Converts to `501,053,628,435`. Can be used to find parent creation on the server: [http://www.spore.com/sporepedia#qry=sast-501053628435]
 Timestamp | `0000000ed18afdbf` | Converts to `63,645,089,215‬`. This can be [converted](https://www.epochconverter.com/seconds-days-since-y0#s1) to a date and time: Tuesday, October 31, 2017 11:26:55 PM
 Username Length | `09` | Converts to `9`. The author's username is 9 characters long.
-Username | `DOGC_Kyle` | This creation was made by DOGC_Kyle.
+Username | `DOGC_Kyle` | This creation was made by *DOGC_Kyle*.
 User ID | `0000007476707e65` | Identifies DOGC_Kyle on the server. Rarely used.
 Name Length | `05` | Converts to `5`. The creation's name is 5 characters long.
-Name | `Kylon` | The creation's name is Kylon.
+Name | `Kylon` | The creation's name is *Kylon*.
 Description Length | `036` | Converts to `54`. The description is 54 characters long.
-Description | | The creation has the following description: "From Planet Kylia. Part of the Spore Multiplayer Game."
+Description | | The creation has the following description: *"From Planet Kylia. Part of the Spore Multiplayer Game."*
 Tags Length | `1a` | Converts to `26`. The tags are 26 characters long.
-Tags | | The creation has the following tags: "set:dogckylon, multiplayer"
+Tags | | The creation has the following tags: *"set:dogckylon, multiplayer"*
 Traits Length | `02` | This creature has completed two stages, and therefore has acquired two consequence traits.
 Traits | `17e5ef84` & `cfb01b93` | These are IDs of the two consequence traits this creature has.
 {: .table}
