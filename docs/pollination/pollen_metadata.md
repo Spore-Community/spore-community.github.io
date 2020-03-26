@@ -15,6 +15,7 @@ The following is included in Pollen Metadata:
 This metadata is included inside Spore PNG data, as a header, prefixing the Spore Model XML.
 
 The metadata has the following format:
+
 Length | Type | Name | Description
 --- | --- | --- | ---
 5 | String | "spore" | Simply identifies the data as being from Spore.
@@ -42,6 +43,7 @@ Length | Type | Name | Description
 ### Examples
 #### Creature example
 `spore00062b978c4640626200182183d70190b84d00000074a91fa01900000074a91fa0130000000ed18afdbf09DOGC_Kyle0000007476707e6505Kylon036From Planet Kylia. Part of the Spore Multiplayer Game.1aset:dogckylon, multiplayer0217e5ef84cfb01b93`
+
 Name | Value | Description
 --- | --- | ---
 "spore" | "spore" | Simply the game's name.
@@ -64,7 +66,6 @@ Tags Length | `1a` | Converts to `26`. The tags are 26 characters long.
 Tags | | The creation has the following tags: *"set:dogckylon, multiplayer"*
 Traits Length | `02` | This creature has completed two stages, and therefore has acquired two consequence traits.
 Traits | `17e5ef84` & `cfb01b93` | These are IDs of the two consequence traits this creature has.
-{: .table}
 
 ## Use in Package Files
 A similar format is used inside of various Spore package files (DBPFs/database packed files), including `Spore_Content.package` (Maxis creations) and `editorSaves.package` (creations made locally).
