@@ -7,7 +7,7 @@ The following is included in Pollen Metadata:
 - Author
     - The username and user ID of the author.
 - Asset ID
-    - All Spore assets have a 12-digit ID, uniquely identifying them on the server.
+    - All Spore assets have a 12-digit ID, uniquely identifying them on the server. [Read more...](asset_id)
 - Description
     - Asset's description, as set in the editor.
 - Tags
@@ -24,7 +24,7 @@ The following is included in Pollen Metadata:
     - Group ID and Instance ID uniquely identify the asset within your own game's files.
     - Machine ID, believed to identify you or your computer. Purpose unknown.
 
-Note that parts and paints are not stored in this data. That data is stored in the Spore Model format.
+Note that parts and paints are not stored in this data. That data is stored in the [Spore Model](model) format.
 
 ---
 
@@ -72,8 +72,8 @@ Type ID | `2b978c46` | This is a creature.
 Group ID | `40626200` | This asset is in the `creature_editorModel~` folder in `editorSaves.package`.
 Instance ID | `182183d7` | This asset has an ID of `182183d7` inside the `creature_editorModel~` folder.
 Machine ID | `0190b84d` | Purpose unknown.
-Asset ID | `00000074a91fa019` | Converts to `501,053,628,441`. Can be used to find this creation on the server: [http://www.spore.com/sporepedia#qry=sast-501053628441]
-Parent ID | `00000074a91fa013` | Converts to `501,053,628,435`. Can be used to find parent creation on the server: [http://www.spore.com/sporepedia#qry=sast-501053628435]
+Asset ID | `00000074a91fa019` | Converts to `501,053,628,441`. Can be used to find this creation on the server: <http://www.spore.com/sporepedia#qry=sast-501053628441>
+Parent ID | `00000074a91fa013` | Converts to `501,053,628,435`. Can be used to find parent creation on the server: <http://www.spore.com/sporepedia#qry=sast-501053628435>
 Timestamp | `0000000ed18afdbf` | Converts to `63,645,089,215‬`. This can be [converted](https://www.epochconverter.com/seconds-days-since-y0#s1) to a date and time: Tuesday, October 31, 2017 11:26:55 PM
 Username Length | `09` | Converts to `9`. The author's username is 9 characters long.
 Username | `DOGC_Kyle` | This creation was made by *DOGC_Kyle*.
