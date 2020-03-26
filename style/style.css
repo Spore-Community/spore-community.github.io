@@ -168,10 +168,12 @@ table {
     border-collapse: collapse;
     font-family: var(--spore-body-font);
     font-size: 14px;
+    margin: 12px 0;
 }
 
 td, th {
-    border: 1px solid var(--spore-mid-space);
+    border-top: 1px solid var(--spore-mid-space);
+    border-bottom: 1px solid var(--spore-mid-space);
     padding: 4px;
 }
 
