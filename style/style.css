@@ -1,4 +1,4 @@
-/* Basic styling */
+/* Fonts */
 
 @font-face {
     font-family: Spore-Regular;
@@ -15,7 +15,7 @@
     src: url(trebucheteabold.ttf);
 }
 
-/** Global styles */
+/* Global styles */
 
 html {
     --spore-font: Spore-Regular, sans-serif;
@@ -55,25 +55,11 @@ body {
     padding: 0 4px;
 }
 
-img {
-    max-width: 100%;
-    max-height: 100%;
-}
-
 /* Header navigation */
 
-header nav ul {
-    margin: 0;
-    padding: 12px 0;
-}
-
-header nav li {
-    display: inline;
-    padding: 12px;
-}
-
-header nav li:hover {
-    background-color: var(--spore-light-space);
+header nav {
+    position: relative;
+    padding: 8px 24px;
 }
 
 header nav a {
@@ -81,11 +67,41 @@ header nav a {
     color: var(--spore-mid-space);
 }
 
+/* Header nav breadcrumbs */
+
+header nav #nav-breadcrumbs {
+    position: absolute;
+    color: var(--spore-light-space);
+}
+
+header nav #nav-breadcrumbs a:hover {
+    color: var(--spore-light-space);
+}
+
+/* Header nav menu */
+
+header nav #nav-menu {
+    position: absolute;
+    right: 8px;
+    margin: 0;
+}
+
+header nav #nav-menu li {
+    display: inline;
+    padding: 12px;
+    border-bottom: solid 1px white;
+}
+
+header nav #nav-menu li:hover {
+    background-color: var(--spore-light-space);
+}
+
 header nav #nav-menu ul {
     display: none;
     position: absolute;
-    margin-top: 12px;
+    top: 33px;
     padding: 0;
+    width: 78px;
 }
 
 header nav #nav-menu li:hover ul {
@@ -95,22 +111,18 @@ header nav #nav-menu li:hover ul {
 
 header nav #nav-menu ul li {
     display: block;
+    padding: 12px 0;
 }
 
-header nav #nav-menu {
-    float: right;
+header nav #nav-menu ul li a {
+    padding: 12px;
 }
 
-/* Main page content */
-
-article {
-    padding: 0 24px;
-    margin: 24px 0;
-}
+/* Basic styles */
 
 h1 {
     color: var(--spore-light-space);
-    font-size: 28px;
+    font-size: 32px;
 }
 
 h2 {
@@ -122,14 +134,18 @@ h3 {
     font-size: 20px;
 }
 
-article p {
-    margin-top: 0;
-    font-family: var(--spore-body-font);
+h4 {
+    font-size: 16px;
 }
 
-article p a {
-    margin-top: 0;
-    color: var(--spore-light-space);
+hr {
+    border: 2px solid var(--spore-mid-space);
+    margin: 32px 0;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
 }
 
 table {
@@ -141,4 +157,21 @@ table {
 td, th {
     border: 1px solid var(--spore-mid-space);
     padding: 4px;
+}
+
+/* Main content styles */
+
+article {
+    padding: 0 24px;
+    margin: 32px 0;
+}
+
+article p {
+    margin-top: 0;
+    font-family: var(--spore-body-font);
+}
+
+article p a {
+    margin-top: 0;
+    color: var(--spore-light-space);
 }
