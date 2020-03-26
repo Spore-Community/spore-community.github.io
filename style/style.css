@@ -135,6 +135,13 @@ article p a {
     color: var(--spore-light-space);
 }
 
-.table table, .table td, .table th {
+table {
+    border-collapse: collapse;
+    font-family: var(--spore-body-font);
+    font-size: 14px;
+}
+
+td, th {
     border: 1px solid var(--spore-mid-space);
+    padding: 4px;
 }
