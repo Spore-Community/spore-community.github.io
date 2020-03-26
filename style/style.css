@@ -119,12 +119,22 @@ header nav #nav-menu ul li a {
 }
 
 /* Footer styles */
+
 footer {
     color: var(--spore-deep-grey);
     font-size: 14px;
+    padding: 0 24px;
 }
 
 /* Basic styles */
+
+p {
+    font-family: var(--spore-body-font);
+}
+
+a {
+    color: var(--spore-light-space);
+}
 
 h1 {
     color: var(--spore-light-space);
@@ -172,12 +182,6 @@ article {
     margin: 32px 0;
 }
 
-article p {
+article p, article p a {
     margin-top: 0;
-    font-family: var(--spore-body-font);
-}
-
-article p a {
-    margin-top: 0;
-    color: var(--spore-light-space);
 }
