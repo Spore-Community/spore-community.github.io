@@ -2,16 +2,29 @@
 <html>
 
 <head>
-    <title>{{ page.title }} - Spore Community Hub</title>
-    <link rel="stylesheet" href="/style/style.css">
+  <title>{{ page.title }} - Spore Community Hub</title>
+  <link rel="stylesheet" href="/style/style.css">
 </head>
 
 <body>
 
   <header>
     <img src="/style/banner.png" id="site-banner">
-    
+
     <nav>
+      <div id="nav-breadcrumbs">
+        {% assign crumbs = page.url | remove:'/index.html' | split: '/' %}
+
+        <a href="/">Home</a>
+        {% for crumb in crumbs offset: 1 %}
+        {% if forloop.last %}
+        / {{ crumb | replace:'_',' ' | remove:'.html' | capitalize }}
+        {% else %}
+        / <a href="{% assign crumb_limit = forloop.index | plus: 1 %}{% for crumb in crumbs limit: crumb_limit %}{{ crumb | append: '/' }}{% endfor %}">{{ crumb | replace:'_',' ' | remove:'.html' | capitalize }}</a>
+        {% endif %}
+        {% endfor %}
+      </div>
+
       <ul id="nav-menu">
         <li>
           <a>&#9776; Menu</a>

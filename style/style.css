@@ -1,23 +1,25 @@
 /* Basic styling */
 
 @font-face {
-  font-family: Spore-Regular;
-  src: url(Spore-Regular.ttf);
-}
-@font-face {
-  font-family: Spore-Light;
-  src: url(Spore-Light.ttf);
+    font-family: Spore-Regular;
+    src: url(Spore-Regular.ttf);
 }
 
 @font-face {
-  font-family: "Trebuchet EA";
-  src: url(trebucheteabold.ttf);
+    font-family: Spore-Light;
+    src: url(Spore-Light.ttf);
 }
+
+@font-face {
+    font-family: "Trebuchet EA";
+    src: url(trebucheteabold.ttf);
+}
+
+/** Global styles */
 
 html {
     --spore-font: Spore-Regular, sans-serif;
     --spore-body-font: "Trebuchet EA", sans-serif;
-
     --spore-white: #FFF;
     --spore-cool: #F0F1F4;
     --spore-neutral: #939496;
@@ -25,10 +27,8 @@ html {
     --spore-light-space: #4E9DD8;
     --spore-mid-space: #2361A7;
     --spore-deep-space: #000112;
-
     font-family: var(--spore-font);
     font-size: 16px;
-
     background: var(--spore-cool) url("bg.png");
 }
 
@@ -39,8 +39,6 @@ body {
     background: var(--spore-white);
 }
 
-
-
 /* Reusable styles */
 
 .hidden {
@@ -50,6 +48,7 @@ body {
 .columns {
     display: flex;
 }
+
 .columns div {
     flex: 25%;
     font-size: 14px;
@@ -60,8 +59,6 @@ img {
     max-width: 100%;
     max-height: 100%;
 }
-
-
 
 /* Header navigation */
 
@@ -90,10 +87,12 @@ header nav #nav-menu ul {
     margin-top: 12px;
     padding: 0;
 }
+
 header nav #nav-menu li:hover ul {
     display: block;
     background-color: var(--spore-light-space);
 }
+
 header nav #nav-menu ul li {
     display: block;
 }
@@ -101,8 +100,6 @@ header nav #nav-menu ul li {
 header nav #nav-menu {
     float: right;
 }
-
-
 
 /* Main page content */
 
