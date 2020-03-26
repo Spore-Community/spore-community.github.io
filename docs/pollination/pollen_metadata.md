@@ -27,16 +27,17 @@ Length | Type | Name | Description
 16 | Hex | Parent ID | Indicates the "parent" asset's ID, if this creation was edited. Used for lineage. Only present if version is 6.
 16 | Hex | Timestamp | Time when asset was saved. Seconds since AD 1.
 2 | Hex | | Length of author's username.
-Var | String | Username | Author's username. May be computer username if offline.
+\* | String | Username | Author's username. May be computer username if offline.
 16 | Hex | User ID | Uniquely identifies user on the server. May be null (-1) if offline.
 2 | Hex | | Length of asset's name.
-Var | String | Name | Asset's name, as set in editor.
+\* | String | Name | Asset's name, as set in editor.
 3 | Hex | | Length of description.
-Var | String | Description | As set in editor. NOT updated if the description is changed on Spore.com.
+\* | String | Description | As set in editor. NOT updated if the description is changed on Spore.com.
 2 | Hex | | Length of tags.
-Var | String | Tags | As set in editor. NOT updated if the tags are changed on Spore.com.
+\* | String | Tags | As set in editor. NOT updated if the tags are changed on Spore.com.
 2 | Hex | | Number of consequence traits (stages completed). Will be 0 for non-creatures.
-Var*8 | Hex | Consequence Traits | An 8-length hex ID for each consequence trait this creature has. Only present for creatures.
+\*8 | Hex | Consequence Traits | An 8-length hex ID for each consequence trait this creature has. Only present for creatures.
+{: .tablelines}
 
 ### Examples
 #### Creature example
@@ -63,6 +64,7 @@ Tags Length | `1a` | Converts to `26`. The tags are 26 characters long.
 Tags | | The creation has the following tags: "set:dogckylon, multiplayer"
 Traits Length | `02` | This creature has completed two stages, and therefore has acquired two consequence traits.
 Traits | `17e5ef84` & `cfb01b93` | These are IDs of the two consequence traits this creature has.
+{: .tablelines}
 
 ## Use in Package Files
 A similar format is used inside of various Spore package files (DBPFs/database packed files), including `Spore_Content.package` (Maxis creations) and `editorSaves.package` (creations made locally).
