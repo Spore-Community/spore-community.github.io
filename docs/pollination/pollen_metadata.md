@@ -37,7 +37,7 @@ Length | Type | Name | Description
 \* | String | Tags | As set in editor. NOT updated if the tags are changed on Spore.com.
 2 | Hex | | Number of consequence traits (stages completed). Will be 0 for non-creatures.
 \*8 | Hex | Consequence Traits | An 8-length hex ID for each consequence trait this creature has. Only present for creatures.
-{: .tablelines}
+{: .table}
 
 ### Examples
 #### Creature example
@@ -64,7 +64,7 @@ Tags Length | `1a` | Converts to `26`. The tags are 26 characters long.
 Tags | | The creation has the following tags: "set:dogckylon, multiplayer"
 Traits Length | `02` | This creature has completed two stages, and therefore has acquired two consequence traits.
 Traits | `17e5ef84` & `cfb01b93` | These are IDs of the two consequence traits this creature has.
-{: .tablelines}
+{: .table}
 
 ## Use in Package Files
 A similar format is used inside of various Spore package files (DBPFs/database packed files), including `Spore_Content.package` (Maxis creations) and `editorSaves.package` (creations made locally).
