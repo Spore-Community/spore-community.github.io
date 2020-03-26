@@ -118,6 +118,12 @@ header nav #nav-menu ul li a {
     padding: 12px;
 }
 
+/* Footer styles */
+footer {
+    color: var(--spore-deep-grey);
+    font-size: 14px;
+}
+
 /* Basic styles */
 
 h1 {
