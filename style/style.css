@@ -29,7 +29,8 @@ html {
     --spore-deep-space: #000112;
     font-family: var(--spore-font);
     font-size: 16px;
-    background: var(--spore-cool) url("bg.png");
+    background-image: url("bg.png");
+    background-color: var(--spore-cool);
 }
 
 body {
