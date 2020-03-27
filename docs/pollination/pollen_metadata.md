@@ -60,9 +60,9 @@ Length | Type | Name | Description
 
 Most other hex values should be converted to decimal values. Windows Calculator (Programmer mode) or [SporeModder FX](https://emd4600.github.io/SporeModder-FX/) (Utilities tab) can do this.
 
-### Examples
+### PNG Examples
 #### Creature example
-```spore00062b978c4640626200182183d70190b84d00000074a91fa01900000074a91fa0130000000ed18afdbf09DOGC_Kyle0000007476707e6505Kylon036From Planet Kylia. Part of the Spore Multiplayer Game.1aset:dogckylon, multiplayer0217e5ef84cfb01b93```
+`spore00062b978c4640626200182183d70190b84d00000074a91fa01900000074a91fa0130000000ed18afdbf09DOGC_Kyle0000007476707e6505Kylon036From Planet Kylia. Part of the Spore Multiplayer Game.1aset:dogckylon, multiplayer0217e5ef84cfb01b93`
 
 Name | Value | Description
 --- | --- | ---
@@ -96,4 +96,79 @@ The metadata for an asset is in its own file, with an extension of `.pollen_meta
 
 The metadata has the following format:
 
-WIP
+Length | Name | Description
+--- | --- | --- | ---
+4 | | Length of asset ID.
+8 | Asset ID | Uniquely identifies this asset on the server. May be null (-1) if offline.
+4 | Type ID* | Type of asset.
+4 | Group ID* | ID of asset's folder inside `editorSaves.package`. Corresponds to asset type.
+4 | Instance ID | ID of asset inside `editorSaves.package`.
+4 | Parent Type ID* | Type of parent asset.
+4 | Parent Group ID* | ID of parent asset's folder inside `editorSaves.package`. Corresponds to asset type.
+4 | Parent Instance ID | ID of parent asset inside `editorSaves.package`.
+8 | Parent ID | Indicates the "parent" asset's ID, if this creation was edited. Used for lineage.
+8 | Original Parent ID | Indicates the oldest, original "parent" asset's ID, if this creation was edited. Used for lineage.
+8 | Timestamp | Time when asset was saved. Seconds since AD 1.
+8 | Timestamp | Time when asset was saved. Seconds since AD 1. Unknown why there are two.
+4 | | Unknown. All zeroes.
+8 | User ID | Uniquely identifies user on the server. May be null (-1) if offline.
+4 | | Length of author's username.
+\* | Username | Author's username. May be computer username if offline.
+4 | | Length of asset's name.
+\* | Name | Asset's name, as set in editor.
+4 | | Length of description.
+\* | Description | As set in editor. NOT updated if the description is changed on Spore.com.
+4 | | Number of next data (usernames)?
+\*4 | | Length of next data (username)?
+\*\* | Username | Author's username. Purpose unknown.
+4 | | Number of tags.
+\*4 | | Length of tag.
+\*\* | Tag | As set in editor. NOT updated if the tags are changed on Spore.com.
+4 | | Unknown. -1 (null).
+4 | | Number of consequence traits (stages completed). Will be 0 for non-creatures.
+\*4 | Consequence Traits* | A hex ID for each consequence trait this creature has. Only present for creatures.
+
+\*These hex values are hashes. Use [SporeModder FX](https://emd4600.github.io/SporeModder-FX/)'s Utilities tab to convert hashes into names.
+
+Most other hex values should be converted to decimal values. Windows Calculator (Programmer mode) or [SporeModder FX](https://emd4600.github.io/SporeModder-FX/) (Utilities tab) can do this.
+
+Compared to the format used in PNGs, the data is in a different order, and the Machine ID is not present. Tags are split up (not a single string). Also, there is extra data for locating the parent asset in `editorSaves.package`, and also an asset ID for the oldest parent asset.
+
+### Package File Examples
+#### Creature example
+`00 00 00 0D 00 00 00 74 A9 1F A0 19 2B 97 8C 46 40 62 62 00 18 21 83 D7 2B 97 8C 46 40 62 62 00 18 21 83 B5 00 00 00 74 A9 1F A0 13 00 00 00 74 A9 1F 20 28 00 00 00 0E D1 8A FD BF 00 00 00 0E D1 8A FD BF 00 00 00 00 00 00 00 74 76 70 7E 65 00 00 00 09 44 00 4F 00 47 00 43 00 5F 00 4B 00 79 00 6C 00 65 00 00 00 00 05 4B 00 79 00 6C 00 6F 00 6E 00 00 00 00 36 46 00 72 00 6F 00 6D 00 20 00 50 00 6C 00 61 00 6E 00 65 00 74 00 20 00 4B 00 79 00 6C 00 69 00 61 00 2E 00 20 00 50 00 61 00 72 00 74 00 20 00 6F 00 66 00 20 00 74 00 68 00 65 00 20 00 53 00 70 00 6F 00 72 00 65 00 20 00 4D 00 75 00 6C 00 74 00 69 00 70 00 6C 00 61 00 79 00 65 00 72 00 20 00 47 00 61 00 6D 00 65 00 2E 00 00 00 00 01 00 00 00 09 44 4F 47 43 5F 4B 79 6C 65 00 00 00 00 00 00 00 02 00 00 00 0D 73 00 65 00 74 00 3A 00 64 00 6F 00 67 00 63 00 6B 00 79 00 6C 00 6F 00 6E 00 00 00 00 0B 6D 00 75 00 6C 00 74 00 69 00 70 00 6C 00 61 00 79 00 65 00 72 00 FF FF FF FF 00 00 00 02 17 E5 EF 84 CF B0 1B 93`
+
+Name | Value | Description
+--- | --- | ---
+Asset ID Length | `00 00 00 0D` | Converts to `13`.
+Asset ID | `00 00 00 74 A9 1F A0 19` | Converts to `501,053,628,441`. Can be used to find this creation on the server: <http://www.spore.com/sporepedia#qry=sast-501053628441>
+Type ID | `2B 97 8C 46` | This is a tribal creature.
+Group ID | `40 62 62 00` | This asset is in the `creature_editorModel~` folder in `editorSaves.package`.
+Instance ID | `18 21 83 D7` | This asset has an ID of `182183d7` inside the `creature_editorModel~` folder.
+Parent Type ID | `2B 97 8C 46` | The parent asset is a tribal creature.
+Parent Group ID | `40 62 62 00` | The parent asset is in the `creature_editorModel~` folder in `editorSaves.package`.
+Parent Instance ID | `18 21 83 B5` | The parent asset has an ID of `182183d7` inside the `creature_editorModel~` folder.
+Parent ID | `00 00 00 74 A9 1F A0 13` | Converts to `501,053,628,435`. Can be used to find parent creation on the server: <http://www.spore.com/sporepedia#qry=sast-501053628435>
+Original Parent ID | `00 00 00 74 A9 1F 20 28` | Converts to `501,053,595,688`. Can be used to find parent creation on the server: <http://www.spore.com/sporepedia#qry=sast-501053595688>
+Timestamp | `00 00 00 0E D1 8A FD BF` | Converts to `63,645,089,215‬`. This can be [converted](https://www.epochconverter.com/seconds-days-since-y0#s1) to a date and time: Tuesday, October 31, 2017 11:26:55 PM
+Timestamp | `00 00 00 0E D1 8A fD BF` | Same as last.
+? | `00 00 00 00` | Unknown.
+User ID | `00 00 00 74 76 70 7E 65` | Identifies DOGC_Kyle on the server. Rarely used.
+Username Length | `00 00 00 09` | Converts to `9`. The author's username is 9 characters long.
+Username | `44 00 4F 00 47 00 43 00 5F 00 4B 00 79 00 6C 00 65 00` | This creation was made by *DOGC_Kyle*.
+Name Length | `00 00 00 05` | Converts to `5`. The creation's name is 5 characters long.
+Name | `4B 00 79 00 6C 00 6F 00 6E 00` | The creation's name is *Kylon*.
+Description Length | `00 00 00 36` | Converts to `54`. The description is 54 characters long.
+Description | `46 00 72 00 6F 00 6D 00 20 00 50 00 6C 00 61 00 6E 00 65 00 74 00 20 00 4B 00 79 00 6C 00 69 00 61 00 2E 00 20 00 50 00 61 00 72 00 74 00 20 00 6F 00 66 00 20 00 74 00 68 00 65 00 20 00 53 00 70 00 6F 00 72 00 65 00 20 00 4D 00 75 00 6C 00 74 00 69 00 70 00 6C 00 61 00 79 00 65 00 72 00 20 00 47 00 61 00 6D 00 65 00 2E 00` | The creation has the following description: *"From Planet Kylia. Part of the Spore Multiplayer Game."*
+Username Count | `00 00 00 01` | Converts to `1`. Indicates 1 username?
+Username Length | `00 00 00 09` | Converts to `9`. The following username is 9 characters long.
+Username | `44 4F 47 43 5F 4B 79 6C 65` | This is the author's username (*DOGC_Kyle*). Possibly used for search?
+? | `00 00 00 00` | Unknown.
+Tags Count | `00 00 00 02` | Converts to `2`. There are two tags.
+Tag Length | `00 00 00 0D` | Converts to `13`. The first tag is 13 characters long.
+Tag | `73 00 65 00 74 00 3A 00 64 00 6F 00 67 00 63 00 6B 00 79 00 6C 00 6F 00 6E 00` | The first tag is: *"set:dogckylon"*
+Tag Length | `00 00 00 0DB` | Converts to `11`. The second tag is 11 characters long.
+Tag | `6D 00 75 00 6C 00 74 00 69 00 70 00 6C 00 61 00 79 00 65 00 72 00` | The second tag is: *"multiplayer"*
+? | `FF FF FF FF` | Unknown.
+Traits Length | `00 00 00 02` | This creature has completed two stages, and therefore has acquired two consequence traits.
+Traits | `17 E5 EF 84` & `CF B0 1B 93` | These are IDs of the two consequence traits this creature has: `crg_attack` (Predator) and `clg_meat` (Carnivore).
