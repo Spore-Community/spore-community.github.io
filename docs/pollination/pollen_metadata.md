@@ -68,7 +68,7 @@ Name | Value | Description
 --- | --- | ---
 "spore" | "spore" |
 Metadata version | 0006 | This asset is from the full game.
-Type ID | `2b978c46` | This is a creature.
+Type ID | `2b978c46` | This is a tribal creature.
 Group ID | `40626200` | This asset is in the `creature_editorModel~` folder in `editorSaves.package`.
 Instance ID | `182183d7` | This asset has an ID of `182183d7` inside the `creature_editorModel~` folder.
 Machine ID | `0190b84d` | Purpose unknown.
