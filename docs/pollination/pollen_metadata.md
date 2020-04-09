@@ -94,11 +94,11 @@ A similar format is used inside of various Spore package files (DBPFs/database p
 
 The metadata for an asset is in its own file, with an extension of `.pollen_metadata`. `.pmet` is also believed to be a valid extension. A hex editor is needed to view and edit the data.
 
-The metadata has the following format:
+The metadata has the following format for player assets:
 
 Length | Name | Description
 --- | --- | --- | ---
-4 | | Length of asset ID.
+4 | Version? | Unknown. Could be a version, could be a length. If lower than 7 or greater than 13, game discards file. Maxis uses 10, player creations use 13.
 8 | Asset ID | Uniquely identifies this asset on the server. May be null (-1) if offline.
 4 | Type ID* | Type of asset.
 4 | Group ID* | ID of asset's folder inside `editorSaves.package`. Corresponds to asset type.
@@ -110,7 +110,7 @@ Length | Name | Description
 8 | Original Parent ID | Indicates the oldest, original "parent" asset's ID, if this creation was edited. Used for lineage.
 8 | Timestamp | Time when asset was saved. Seconds since AD 1.
 8 | Timestamp | Time when asset was saved. Seconds since AD 1. Unknown why there are two.
-4 | | Unknown. All zeroes.
+4 | Assembled Content? | Unknown. For player creations, all zeroes. For Maxis creations, -1.
 8 | User ID | Uniquely identifies user on the server. May be null (-1) if offline.
 4 | | Length of author's username.
 \* | Username | Author's username. May be computer username if offline.
@@ -127,6 +127,14 @@ Length | Name | Description
 4 | | Unknown. -1 (null).
 4 | | Number of consequence traits (stages completed). Will be 0 for non-creatures.
 \*4 | Consequence Traits* | A hex ID for each consequence trait this creature has. Only present for creatures.
+
+For Maxis creations included with the game (Assembled Content) in `Spore_Content.package`, the fields for User ID, Username, Name, and Description, are replaced with three fieldsL
+
+Length | Name | Description
+--- | --- | --- | ---
+4 | Localization file | The ID of the localization file in `Text.package`.
+4 | Author ID | Hash inside localization file. 1 for Maxis, 2 for Jessica, 3 for Micheal.
+4 | Name ID | Hash inside localization file. Used to retrieve asset name.
 
 \*These hex values are hashes. Use [SporeModder FX](https://emd4600.github.io/SporeModder-FX/)'s Utilities tab to convert hashes into names.
 
