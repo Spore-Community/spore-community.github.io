@@ -108,8 +108,8 @@ Length | Name | Description
 4 | Parent Instance ID | ID of parent asset inside `editorSaves.package`.
 8 | Parent ID | Indicates the "parent" asset's ID, if this creation was edited. Used for lineage.
 8 | Original Parent ID | Indicates the oldest, original "parent" asset's ID, if this creation was edited. Used for lineage.
-8 | Timestamp | Time when asset was saved. Seconds since AD 1.
-8 | Timestamp | Time when asset was saved. Seconds since AD 1. Unknown why there are two.
+8 | Time Created | Time when asset was created. Seconds since AD 1.
+8 | Time Downloaded | Time when asset was downloaded. Seconds since AD 1.
 4 | Localization | When `0000` (player creations), author/name/description are specified here. When `FFFF` (Maxis creations), localization values are specified instead. See below.
 8 | User ID | Uniquely identifies user on the server. May be null (-1) if offline.
 4 | | Length of author's username.
@@ -167,8 +167,8 @@ Parent Group ID | `40 62 62 00` | The parent asset is in the `creature_editorMod
 Parent Instance ID | `18 21 83 B5` | The parent asset has an ID of `182183d7` inside the `creature_editorModel~` folder.
 Parent ID | `00 00 00 74 A9 1F A0 13` | Converts to `501,053,628,435`. Can be used to find parent creation on the server: <http://www.spore.com/sporepedia#qry=sast-501053628435>
 Original Parent ID | `00 00 00 74 A9 1F 20 28` | Converts to `501,053,595,688`. Can be used to find parent creation on the server: <http://www.spore.com/sporepedia#qry=sast-501053595688>
-Timestamp | `00 00 00 0E D1 8A FD BF` | Converts to `63,645,089,215‬`. This can be [converted](https://www.epochconverter.com/seconds-days-since-y0#s1) to a date and time: Tuesday, October 31, 2017 11:26:55 PM
-Timestamp | `00 00 00 0E D1 8A fD BF` | Same as last.
+Time Created | `00 00 00 0E D1 8A FD BF` | Converts to `63,645,089,215‬`. This can be [converted](https://www.epochconverter.com/seconds-days-since-y0#s1) to a date and time: Tuesday, October 31, 2017 11:26:55 PM
+Time Downloaded | `00 00 00 0E D1 8A fD BF` | This creation was made locally, so the time is exactly the same.
 Localization | `00 00 00 00` | This creation's author and name are not localized, but rather specified here.
 User ID | `00 00 00 74 76 70 7E 65` | Identifies DOGC_Kyle on the server. Rarely used.
 Username Length | `00 00 00 09` | Converts to `9`. The author's username is 9 characters long.
