@@ -52,3 +52,15 @@
 * [202404061419266bb1f (300000299348 - 500755999738)](https://archive.fart.website/archivebot/viewer/job/202404061419266bb1f) (~< 19 GB)
 * [202406180626405xhf7 (500756000163 - 501011999991)](https://archive.fart.website/archivebot/viewer/job/202406180626405xhf7) (~< 17 GB)
 * [2024080705590694pm5 (501012000003 - 501110999983)](https://archive.fart.website/archivebot/viewer/job/2024080705590694pm5) (~< 7 GB)
+
+---
+
+# Postcards
+
+## ID Ranges
+### 1. **500000000021 - 501036125985** (2008/05/29 - 2016/07/05)
+
+---
+
+## `www.spore.com/view/postcard` & `www.spore.com/static/postcard` (static data + `Accept-Language: en-US` webpages, 65 GB total)
+https://archive.fart.website/archivebot/viewer/job/2023120619365742d1d (~< 65 GB)
