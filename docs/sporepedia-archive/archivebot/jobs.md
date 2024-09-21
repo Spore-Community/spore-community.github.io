@@ -58,9 +58,9 @@
 # Postcards
 
 ## ID Ranges
-### 1. **500000000021 - 501036125985** (2008/05/29 - 2016/07/05)
+### 1. **500000000021 - 501036125985** *(2008/05/29 - 2016/07/05)*
 
 ---
 
 ## `www.spore.com/view/postcard` & `www.spore.com/static/postcard` (static data + `Accept-Language: en-US` webpages, 65 GB total)
-https://archive.fart.website/archivebot/viewer/job/2023120619365742d1d (~< 65 GB)
+* [2023120619365742d1d (500000000021 - 501036125985)](https://archive.fart.website/archivebot/viewer/job/2023120619365742d1d) (~< 65 GB)
