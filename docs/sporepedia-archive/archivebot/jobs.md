@@ -63,4 +63,18 @@
 ---
 
 ## `www.spore.com/view/postcard` & `www.spore.com/static/postcard` (static data + `Accept-Language: en-US` webpages, 65 GB total)
+
 * [2023120619365742d1d (500000000021 - 501036125985)](https://archive.fart.website/archivebot/viewer/job/2023120619365742d1d) (~< 65 GB)
+
+---
+
+# Sporecasts (Feeds)
+
+## ID Ranges
+### 1. **500007341612 - 501048631877** *(2008/07/31 - 2017/05/25)*
+
+---
+
+## `www.spore.com/atom/sporecast` (list of creations & metadata, 3.7 GB total)
+
+* [202404280957007m4l4 (500007341612 - 501048631877)](https://archive.fart.website/archivebot/viewer/job/202404280957007m4l4) (~< 3.7 GB)
