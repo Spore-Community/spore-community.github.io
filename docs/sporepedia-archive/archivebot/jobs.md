@@ -78,3 +78,22 @@
 > ## `www.spore.com/atom/sporecast` (list of creations & metadata, 3.7 GB total)
 >
 >> 1. [202404280957007m4l4 (500007341612 - 501048631877)](https://archive.fart.website/archivebot/viewer/job/202404280957007m4l4) (~< 3.7 GB)
+
+---
+
+# Users
+
+## ID Ranges
+### 1. **2250004030 - 501116336722** *(2007/12/27 - 2024/11/24)*
+
+---
+
+> ## `www.spore.com/view/(myspore + buddies + achievements + points + trophies + events)` (HTML pages, 233.6 GB total)
+>
+>> 1. [2025010500202313hta (2250004030 - 501116336722)](https://archive.fart.website/archivebot/viewer/job/2025010500202313hta) (~< 233.6 GB)
+
+---
+
+> ## `pollinator.spore.com/atom/user` (list of creations & metadata, 10.7 GB total)
+>
+>> 1. [20241209222030attql (2250004030 - 501116336722)](https://archive.fart.website/archivebot/viewer/job/20241209222030attql) (~< 10.7 GB)
