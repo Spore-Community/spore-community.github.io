@@ -72,12 +72,14 @@
 
 ## ID Ranges
 ### 1. **500007341612 - 501048631877** *(2008/07/31 - 2017/05/25)*
+### 2. **501048635614 - 501119998532** *(2017/05/25 - 2025/07/31)*
 
 ---
 
-> ## `www.spore.com/atom/sporecast` (list of creations & metadata, 3.7 GB total)
+> ## `www.spore.com/atom/sporecast` (list of creations & metadata, 4 GB total)
 >
 >> 1. [202404280957007m4l4 (500007341612 - 501048631877)](https://archive.fart.website/archivebot/viewer/job/202404280957007m4l4) (~< 3.7 GB)
+>> 2. [20250929164131f0abl (501048635614 - 501119998532)](https://archive.fart.website/archivebot/viewer/job/20250929164131f0abl) (~< 265 MB)
 
 ---
 
