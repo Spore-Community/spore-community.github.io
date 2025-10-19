@@ -8,50 +8,58 @@
 ### 1. **300000299348 - 500755999738** *(2008/07/06 - 2011/06/25 + Maxis)*
 ### 2. **500756000163 - 501011999991** *(2011/06/25 - 2015/04/25)*
 ### 3. **501012000003 - 501110999983** *(2015/04/25 - 2024/01/01)*
+### 4. **501111000016 - 501120739942** *(2024/01/01 - 2025/09/29)*
 
 ---
 
 > ## `static.spore.com` archives (static data, 2 TB total)
 >
->> ### `/model/.../.xml` (~< 115 GB total)
+>> ### `/model/.../.xml` (~< 117 GB total)
 >> 1. [202402031742214ctpm (300000299348 - 500755999738)](https://archive.fart.website/archivebot/viewer/job/202402031742214ctpm)
 >> 2. [20240210230209294yd (500756000163 - 501011999991)](https://archive.fart.website/archivebot/viewer/job/20240210230209294yd)
 >> 3. [202402171701348xs93 (501012000003 - 501110999983)](https://archive.fart.website/archivebot/viewer/job/202402171701348xs93)
+>> 4. [2025093006350024ajk (501111000016 - 501120739942)](https://archive.fart.website/archivebot/viewer/job/2025093006350024ajk)
 >
 >
->> ### `/thumb/.../.png` (~< 655 GB total)
+>> ### `/thumb/.../.png` (~< 664 GB total)
 >> 1. [2024012212352959e0q (300000299348 - 500755999738)](https://archive.fart.website/archivebot/viewer/job/2024012212352959e0q)
 >> 2. [20240126234131n4udd (500756000163 - 501011999991)](https://archive.fart.website/archivebot/viewer/job/20240126234131n4udd)
 >> 3. [202402010034157ncoe (501012000003 - 501110999983)](https://archive.fart.website/archivebot/viewer/job/202402010034157ncoe)
+>> 4. [2025093015155953kw1 (501111000016 - 501120739942)](https://archive.fart.website/archivebot/viewer/job/2025093015155953kw1)
 >
 >
->> ### `/image/.../_lrg.png` (~< 986 GB total)
+>> ### `/image/.../_lrg.png` (~< 999 GB total)
 >> 1. [202404202056259znpo (300000299348 - 500755999738)](https://archive.fart.website/archivebot/viewer/job/202404202056259znpo)
 >> 2. [2024042810551791spx (500756000163 - 501011999991)](https://archive.fart.website/archivebot/viewer/job/2024042810551791spx)
 >> 3. [202405051803504ujt9 (501012000003 - 501110999983)](https://archive.fart.website/archivebot/viewer/job/202405051803504ujt9)
+>> 4. [202509301629493pg5y (501111000016 - 501120739942)](https://archive.fart.website/archivebot/viewer/job/202509301629493pg5y)
 >
->> ### `/image/.../_2_lrg.png` (~< 80 GB total)
+>> ### `/image/.../_2_lrg.png` (~< 81 GB total)
 >> 1. [20240508155858divkl (300000299348 - 500755999738)](https://archive.fart.website/archivebot/viewer/job/20240508155858divkl)
 >> 2. [202405150956345c7vx (500756000163 - 501011999991)](https://archive.fart.website/archivebot/viewer/job/202405150956345c7vx)
 >> 3. [2024052107083761ksx (501012000003 - 501110999983)](https://archive.fart.website/archivebot/viewer/job/2024052107083761ksx)
+>> 4. [20250930190547ad2tr (501111000016 - 501120739942)](https://archive.fart.website/archivebot/viewer/job/20250930190547ad2tr)
 >
->> ### `/image/.../_3_lrg.png` (~< 75 GB total)
+>> ### `/image/.../_3_lrg.png` (~< 76 GB total)
 >> 1. [20240522170336ebow1 (300000299348 - 500755999738)](https://archive.fart.website/archivebot/viewer/job/20240522170336ebow1)
 >> 2. [202405301151067itlj (500756000163 - 501011999991)](https://archive.fart.website/archivebot/viewer/job/202405301151067itlj)
 >> 3. [202406051641185776t (501012000003 - 501110999983)](https://archive.fart.website/archivebot/viewer/job/202406051641185776t)
+>> 4. [202510010607055iy3h (501111000016 - 501120739942)](https://archive.fart.website/archivebot/viewer/job/202510010607055iy3h)
 >
->> ### `/image/.../_4_lrg.png` (~< 72 GB total)
+>> ### `/image/.../_4_lrg.png` (~< 73 GB total)
 >> 1. [202406071701544ibui (300000299348 - 500755999738)](https://archive.fart.website/archivebot/viewer/job/202406071701544ibui)
 >> 2. [202406120501388ovnv (500756000163 - 501011999991)](https://archive.fart.website/archivebot/viewer/job/202406120501388ovnv)
 >> 3. [20240618052714bxgdo (501012000003 - 501110999983)](https://archive.fart.website/archivebot/viewer/job/20240618052714bxgdo)
+>> 4. [202510011720199jo52 (501111000016 - 501120739942)](https://archive.fart.website/archivebot/viewer/job/202510011720199jo52)
 
 ---
 
-> ## `www.spore.com/rest/asset` responses (basic metadata, 43 GB total)
+> ## `www.spore.com/rest/asset` responses (basic metadata, 44 GB total)
 >
 >> 1. [202404061419266bb1f (300000299348 - 500755999738)](https://archive.fart.website/archivebot/viewer/job/202404061419266bb1f) (~< 19 GB)
 >> 2. [202406180626405xhf7 (500756000163 - 501011999991)](https://archive.fart.website/archivebot/viewer/job/202406180626405xhf7) (~< 17 GB)
 >> 3. [2024080705590694pm5 (501012000003 - 501110999983)](https://archive.fart.website/archivebot/viewer/job/2024080705590694pm5) (~< 7 GB)
+>> 4. [20250930193613baww9 (501111000016 - 501120739942)](https://archive.fart.website/archivebot/viewer/job/20250930193613baww9) (~< 551 MB)
 
 ---
 
